@@ -1,8 +1,11 @@
 # app.py
 from flask import Flask, request, jsonify, render_template
 import joblib
+import matplotlib
 import numpy as np
 from privacy_preserving import preprocess_data_with_privacy
+
+matplotlib.use('Agg')  
 import matplotlib.pyplot as plt
 import os
 
